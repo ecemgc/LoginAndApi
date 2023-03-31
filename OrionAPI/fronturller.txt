@@ -1,0 +1,54 @@
+Employees
+
+get Employee list
+getEmployeeList(): Observable<any[]>{
+    return this.http.get<any[]>(this.APIUrl + 'employees')
+}
+
+post Employees
+postEmployee(): Observable<any[]>{
+    return this.http.post<any[]>(this.APIUrl + 'employees/')
+}
+
+put Employees
+updateEmployees(id:any){
+    return this.http.put(this.APIUrl + 'employees/' + id)
+}
+
+delete Employees
+deleteEmployees(id:any){
+    return this.http.delete(this.APIUrl + 'employees/' + id)
+}
+
+get one Employee 
+getEmployee(id:any){
+    return this.http.get(this.APIUrl + 'employees/' + id)
+}
+
+Departments
+
+get department list
+getDepartmentsList(): Observable<any[]>{
+    return this.http.get<any[]>(this.APIUrl + 'department')
+}
+
+post Department
+postDepartment(): Observable<any[]>{
+    return this.http.post<any[]>(this.APIUrl + 'department/')
+}
+
+put Department
+updateDepartment(id:any){
+    return this.http.put(this.APIUrl + 'department/' + id)
+}
+
+delete Department
+deleteEmployees(id:any){
+    return this.http.delete(this.APIUrl + 'department/' + id)
+}
+
+get one Department 
+getEmployee(id:any){
+    return this.http.get(this.APIUrl + 'department/' + id)
+}
+
